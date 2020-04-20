@@ -1,6 +1,6 @@
 const express = require('express'); // framework API
 const app = express(); // use frameworknya
-const port = 2000; // portnya lah apalagi
+const port = process.env.PORT || 2000; // portnya lah apalagi
 const cors = require('cors'); // react bisa interaksi dengan API
 const bodyParser = require('body-parser'); // req.body untuk kirim data dari frontend
 const bearerToken = require('express-bearer-token'); // spy bisa pakai req.token
