@@ -11,6 +11,15 @@ const db = mysql.createConnection({
     database : 'todoappneil',
     port : 3306
 });
+
+// const db = mysql.createConnection({
+//     host : 'localhost',
+//     user : 'Aldrich',
+//     password : 'neil1804',
+//     database : 'todo-app',
+//     port : 3306
+// });
+
 const query = util.promisify(db.query).bind(db);
 
 module.exports = {
