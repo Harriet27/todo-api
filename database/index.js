@@ -5,10 +5,10 @@ const { MongoClient, ObjectID } = require('mongodb');
 let url = 'mongodb+srv://lian:asd123@dbjc11-gitmg.mongodb.net/test?retryWrites=true&w=majority';
 
 const db = mysql.createConnection({
-    host : 'localhost',
-    user : 'Aldrich',
+    host : 'db4free.net',
+    user : 'aldrich',
     password : 'neil1804',
-    database : 'todo-app',
+    database : 'todoappneil',
     port : 3306
 });
 const query = util.promisify(db.query).bind(db);
